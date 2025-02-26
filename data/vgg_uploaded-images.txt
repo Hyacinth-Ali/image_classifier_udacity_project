@@ -1,0 +1,53 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+The length of the dictionary is: 4
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                    Tree_01.jpg  label:                       tree
+ 3 key:                  Lizard_01.jpg  label:                     lizard
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:    west highland white terrier
+
+                   Tree_01.jpg: 
+Real:                       tree   Classifier:                       rapeseed
+
+                 Lizard_01.jpg: 
+Real:                     lizard   Classifier:                          agama
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                norfolk terrier
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+Matched dog names:  {'Dog_02.jpg': ['dog', 'west highland white terrier', 0, 1, 1], 'Tree_01.jpg': ['tree', 'rapeseed', 0, 0, 0], 'Lizard_01.jpg': ['lizard', 'agama', 0, 0, 0], 'Dog_01.jpg': ['dog', 'norfolk terrier', 0, 1, 1]}
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:    west highland white terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Tree_01.jpg: 
+Real:                       tree   Classifier:                       rapeseed  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                 Lizard_01.jpg: 
+Real:                     lizard   Classifier:                          agama  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                norfolk terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
