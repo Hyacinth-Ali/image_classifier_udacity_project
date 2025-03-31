@@ -49,6 +49,8 @@ def get_pet_labels(image_dir):
 
     # Loop through the image files
     for image_file in image_files:
+      if image_file.startswith('.'):
+        continue
       label = ""
       words = image_file.strip().lower().split("_")
       for word in words:

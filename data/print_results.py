@@ -77,12 +77,12 @@ def print_results(results_dic, results_stats_dic, model,
         print("Here are missclassified dogs:")
         for k, v in results_dic.items():
                 if sum(results_dic[k][3:]) == 1:
-                        print(results_dic[k][0])
+                        print(f"Real: {results_dic[k][0]}       Classifier Label: {results_dic[k][1]}")
 
     if print_incorrect_breed and results_stats_dic['n_correct_dogs'] != results_stats_dic['pct_correct_breed']:
         print("Here are missclassified breeds:")
         for k, v in results_dic.items():
                 if sum(results_dic[k][3:]) == 2 and results_dic[k][2] == 0:
-                        print(results_dic[k][0])
+                        print(f"Real: {results_dic[k][0]}       Classifier Label: {results_dic[k][1]}")
     
                 

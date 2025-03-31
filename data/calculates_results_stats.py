@@ -86,14 +86,14 @@ def calculates_results_stats(results_dic):
         n_dogs_img += results_dic[k][3]
         n_correct_notdogs += 1 if results_dic[k][3] == 0 and results_dic[k][4] == 0 else 0
         # n_notdogs_img += 1 if results_dic[k][3] == 0 else 0
-        n_correct_breed += results_dic[k][3] and results_dic[k][2]
+        n_correct_breed += 1 if results_dic[k][3] and results_dic[k][2] else 0
 
     n_notdogs_img = n_images - n_dogs_img # number of NON-dog images
 
     pct_match = n_match / n_images * 100
     pct_correct_dogs = (n_correct_dogs / n_dogs_img * 100) if n_dogs_img > 0 else 0
     pct_correct_notdogs = n_correct_notdogs / n_notdogs_img * 100
-    pct_correct_breed = n_correct_breed / n_match * 100
+    pct_correct_breed = n_correct_breed / n_dogs_img * 100
 
     results_stats_dic['n_images'] = n_images
     results_stats_dic['n_match'] = n_match

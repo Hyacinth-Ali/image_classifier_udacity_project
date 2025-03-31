@@ -325,11 +325,11 @@ Percentage Correct Dogs:  100.0
 Percentage Correct Breeds:  80.0
 Percentage "Not-a" Dogs:  100.0
 Here are missclassified breeds:
-boston terrier
-great pyrenees
-golden retriever
-beagle
-golden retriever
-beagle
+Real: boston terrier       Classifier Label: basenji
+Real: great pyrenees       Classifier Label: kuvasz
+Real: golden retriever       Classifier Label: afghan hound, afghan
+Real: beagle       Classifier Label: english foxhound
+Real: golden retriever       Classifier Label: tibetan mastiff
+Real: beagle       Classifier Label: walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:59:51
+** Total Elapsed Runtime: 0:0:7

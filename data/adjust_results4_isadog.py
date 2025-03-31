@@ -78,7 +78,13 @@ def adjust_results4_isadog(results_dic, dogfile):
 
     # print("The dog names: ", dog_names)
     
-    for k, v in results_dic.items():
+    # for k, v in results_dic.items():
+    #   pet_image_label = v[0]
+    #   classifier_label = v[1]
+    #   v.append(1) if pet_image_label in dog_names else v.append(0)
+    #   v.append(1) if classifier_label in dog_names else v.append(0)
+
+    for v in results_dic.values():
       pet_image_label = v[0]
       classifier_label = v[1]
       v.append(1) if pet_image_label in dog_names else v.append(0)
